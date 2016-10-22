@@ -1,0 +1,12 @@
+#N canvas 483 366 450 300 12;
+#X text 18 7 PDKSYNTH;
+#X text 18 33 dkbd1~ - bass drum synth;
+#X text 16 47 dkbd2~ - 808ish bass drm synth;
+#X text 16 66 dkclap1~ - clap synthesizer (needs dkenv~);
+#X text 15 80 dkclap2~ - clap synthesizer;
+#X text 19 106 dkhh1~ - hihat synth;
+#X text 19 119 dkhh2~ - hihat synth;
+#X text 20 138 dksd1~ - snare drum synth;
+#X text 20 150 dksd2~ - snare drum synth;
+#X text 111 7 gpl v3;
+#X text 231 11 Derek Kwan \, 2016;
