@@ -1,4 +1,4 @@
-#N canvas 482 373 572 439 10;
+#N canvas 485 378 572 439 10;
 #X obj 73 270 sig~ 70;
 #X obj 30 301 vcf~ 10;
 #X text 22 10 DKBD2~ 808-ish bass drum synth;
@@ -18,7 +18,7 @@
 #X text 416 12 Derek Kwan 2016;
 #X text 470 34 gpl v 2;
 #X obj 232 96 loadbang;
-#X obj 29 195 dkclik~ 64;
+#X obj 3 188 pdkm/dkclik~ 64;
 #X connect 0 0 1 1;
 #X connect 1 0 15 0;
 #X connect 3 0 1 0;
