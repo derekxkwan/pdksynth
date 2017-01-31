@@ -16,5 +16,7 @@ PERCUSSION:
 - dksd2~ - snare drum synth
 
 PITCHES:
+- dkbrass1~ - brass synth
 - dksaw1~ - saw synth (requires pdkm)
+- dkorgan1~ - organ synth
 - dkrhodes1~ - rhodes synth

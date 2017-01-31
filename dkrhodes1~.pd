@@ -1,4 +1,4 @@
-#N canvas 1222 99 587 548 12;
+#N canvas 1220 101 587 548 12;
 #X obj 68 499 dac~ 1 2;
 #X obj 291 326 t f f;
 #X obj 326 363 > 10;
@@ -162,9 +162,9 @@
 #X text 25 22 dkrhodes1~ - rhodes synth;
 #X text 20 49 slightly modified from FM Rhodes;
 #X text 21 68 by snappizz from sccode.org;
-#X text 412 102 Derek Kwan 2016;
 #X text 413 125 gpl v 3;
 #X text 24 130 inlet: f - freq in Hz;
+#X text 412 102 Derek Kwan 2017;
 #X connect 1 0 3 0;
 #X connect 1 1 2 0;
 #X connect 2 0 7 0;
