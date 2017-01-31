@@ -5,6 +5,7 @@ A GPL v3 synth (abstraction for now) library for Pure Data
 
 ABSTRACTIONS:
 
+PERCUSSION:
 - dkbd1~ - bass drum synth
 - dkbd2~ - 808ish bass drum synth (requires dkclik~)
 - dkclap1~ - clap synthesizer (requires dkenv~)
@@ -13,3 +14,7 @@ ABSTRACTIONS:
 - dkhh2~ - hihat synth (requres dkpink~, dkenv~)
 - dksd1~ - snare drum synth
 - dksd2~ - snare drum synth
+
+PITCHES:
+- dksaw1~ - saw synth (requires pdkm)
+- dkrhodes1~ - rhodes synth
