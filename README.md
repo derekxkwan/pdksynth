@@ -17,6 +17,7 @@ PERCUSSION:
 
 PITCHES:
 - dkbrass1~ - brass synth
+- dkdesyp1~ - DEtuned SYnth Pad
 - dksaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
 - dkrhodes1~ - rhodes synth
