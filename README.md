@@ -8,6 +8,7 @@ ABSTRACTIONS:
 PERCUSSION:
 - dkbd1~ - bass drum synth
 - dkbd2~ - 808ish bass drum synth (requires dkclik~)
+- dkbd3~ - bass drum synth (requires zexy, dkpink~ from pdkm)
 - dkclap1~ - clap synthesizer (requires dkenv~)
 - dkclap2~ - clap synthesizer
 - dkhh1~ - hihat synth
