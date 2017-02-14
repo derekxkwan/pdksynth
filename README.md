@@ -23,3 +23,4 @@ PITCHES:
 - dksaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
 - dkrhodes1~ - rhodes synth
+- dkstring1~ - first attempt at a string synth

@@ -1,4 +1,4 @@
-#N canvas 471 378 450 300 12;
+#N canvas 469 380 450 300 12;
 #X text 18 7 PDKSYNTH;
 #X text 111 7 gpl v3;
 #N canvas 1 101 450 300 percussion 0;
@@ -13,13 +13,14 @@
 #X text 20 68 dkbd3~ - bass drum synth;
 #X restore 24 54 pd percussion;
 #X text 231 11 Derek Kwan \, 2016;
-#N canvas 761 313 716 280 pitched 0;
+#N canvas 759 315 716 280 pitched 0;
 #X text 17 91 dksaw1~ saw synth (needs pdkm);
-#X text 16 130 dkrhodes1~ - rhodes synth;
+#X text 16 159 dkrhodes1~ - rhodes synth;
 #X text 18 2 dkbrass1~ - brass synth;
 #X text 16 110 dkorgan1~ organ synth;
 #X text 18 19 dkdesyp1~ - DEtuned SYnth Pad;
 #X text 14 44 dkklmba1~ - kalimba synth (requires dkenv~ \, dkpink~
 ;
-#X text 235 70 dksnbnkr~ from pdkm);
+#X text 230 65 dksnbnkr~ from pdkm);
+#X text 16 136 dkstring1~ - first attempt at string synth;
 #X restore 149 60 pd pitched;
