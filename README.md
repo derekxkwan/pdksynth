@@ -21,7 +21,7 @@ PITCHES:
 - dkdesyp1~ - DEtuned SYnth Pad
 - dkemsine1~ - everything modulated sine
 - dkklmba1~ - kalimba synth (requires dkenv~, dkpink~, dksnbnkr~ from pdkm)
-- dksaw1~ - saw synth (requires pdkm)
+- dksynsaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
 - dkpwmsq1~ - pw-modded square wave
 - dkrhodes1~ - rhodes synth
