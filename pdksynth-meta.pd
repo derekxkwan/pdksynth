@@ -1,4 +1,4 @@
-#N canvas 461 388 450 300 12;
+#N canvas 457 392 450 300 12;
 #X text 18 7 PDKSYNTH;
 #X text 111 7 gpl v3;
 #N canvas 1 101 450 300 percussion 0;
@@ -27,3 +27,7 @@
 #X text 17 123 dksynsaw1~ saw synth (needs pdkm);
 #X text 16 39 dkdesaw1~ - detuned saw synth;
 #X restore 149 60 pd pitched;
+#N canvas 1 101 450 300 oscillators 0;
+#X text 27 18 dkdutysaw~ - variable-duty saw;
+#X text 24 41 dkdutysq~ - variable-duty square wave;
+#X restore 29 96 pd oscillators;

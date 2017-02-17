@@ -27,3 +27,8 @@ PITCHES:
 - dkpwmsq1~ - pw-modded square wave
 - dkrhodes1~ - rhodes synth
 - dkstring1~ - first attempt at a string synth
+
+OSCILLATORS:
+
+- dkdutysaw~ - variable-duty saw (requires zexy)
+- dkdutysq~ - variable-duty square wave (requires zexy)
