@@ -1,4 +1,4 @@
-#N canvas 457 392 450 300 12;
+#N canvas 455 394 450 300 12;
 #X text 18 7 PDKSYNTH;
 #X text 111 7 gpl v3;
 #N canvas 1 101 450 300 percussion 0;
@@ -13,19 +13,20 @@
 #X text 20 68 dkbd3~ - bass drum synth;
 #X restore 24 54 pd percussion;
 #X text 231 11 Derek Kwan \, 2016;
-#N canvas 751 323 716 280 pitched 0;
-#X text 16 218 dkrhodes1~ - rhodes synth;
+#N canvas 749 325 716 280 pitched 0;
+#X text 16 244 dkrhodes1~ - rhodes synth;
 #X text 18 2 dkbrass1~ - brass synth;
-#X text 16 142 dkorgan1~ organ synth;
+#X text 16 168 dkorgan1~ organ synth;
 #X text 18 19 dkdesyp1~ - DEtuned SYnth Pad;
-#X text 14 76 dkklmba1~ - kalimba synth (requires dkenv~ \, dkpink~
+#X text 14 102 dkklmba1~ - kalimba synth (requires dkenv~ \, dkpink~
 ;
-#X text 230 97 dksnbnkr~ from pdkm);
-#X text 16 195 dkstring1~ - first attempt at string synth;
-#X text 15 56 dkemsine1~ - everything-modulated-sine;
-#X text 16 165 dkpwmsq1~ - pw-modded square wave;
-#X text 17 123 dksynsaw1~ saw synth (needs pdkm);
+#X text 230 123 dksnbnkr~ from pdkm);
+#X text 16 221 dkstring1~ - first attempt at string synth;
+#X text 15 82 dkemsine1~ - everything-modulated-sine;
+#X text 16 191 dkpwmsq1~ - pw-modded square wave;
+#X text 17 149 dksynsaw1~ saw synth (needs pdkm);
 #X text 16 39 dkdesaw1~ - detuned saw synth;
+#X text 16 64 dkdtmf~ - dtmf synth;
 #X restore 149 60 pd pitched;
 #N canvas 1 101 450 300 oscillators 0;
 #X text 27 18 dkdutysaw~ - variable-duty saw;
