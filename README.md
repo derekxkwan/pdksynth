@@ -11,6 +11,7 @@ PERCUSSION:
 - dkbd3~ - bass drum synth (requires zexy, dkpink~ from pdkm)
 - dkclap1~ - clap synthesizer (requires dkenv~)
 - dkclap2~ - clap synthesizer
+- dkgong1~ - gong fm synth
 - dkhh1~ - hihat synth
 - dkhh2~ - hihat synth (requres dkpink~, dkenv~)
 - dksd1~ - snare drum synth
