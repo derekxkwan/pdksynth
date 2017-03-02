@@ -9,6 +9,7 @@ PERCUSSION:
 - dkbd1~ - bass drum synth
 - dkbd2~ - 808ish bass drum synth (requires dkclik~)
 - dkbd3~ - bass drum synth (requires zexy, dkpink~ from pdkm)
+- dkcymb808-1~ - 808 cymbal synth
 - dkclap1~ - clap synthesizer (requires dkenv~)
 - dkclap2~ - clap synthesizer
 - dkgong1~ - gong fm synth
