@@ -27,6 +27,7 @@ PITCHES:
 - dkklmba1~ - kalimba synth (requires dkenv~, dkpink~, dksnbnkr~ from pdkm)
 - dksynsaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
+- dkpiano1~ - piano synth
 - dkpwmsq1~ - pw-modded square wave
 - dkrhodes1~ - rhodes synth
 - dkstring1~ - first attempt at a string synth
