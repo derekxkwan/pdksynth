@@ -17,6 +17,9 @@ PERCUSSION:
 - dkhh2~ - hihat synth (requres dkpink~, dkenv~)
 - dksd1~ - snare drum synth
 - dksd2~ - snare drum synth
+- dksd3~ - snare drum synth
+- dksd4~ - snare drum synth
+
 
 PITCHES:
 - dkbrass1~ - brass synth
