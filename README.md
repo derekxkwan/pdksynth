@@ -36,6 +36,8 @@ PITCHES:
 - dkstring1~ - first attempt at a string synth
 
 OSCILLATORS:
-
 - dkdutysaw~ - variable-duty saw (requires zexy)
 - dkdutysq~ - variable-duty square wave (requires zexy)
+
+OTHER:
+- dkvowel~ - vowel synthesizer
