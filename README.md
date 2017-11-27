@@ -40,4 +40,4 @@ OSCILLATORS:
 - dkdutysq~ - variable-duty square wave (requires zexy)
 
 OTHER:
-- dkvowel~ - vowel synthesizer
+- dkvowel~ - vowel synthesizer based on three formants
