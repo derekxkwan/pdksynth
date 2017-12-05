@@ -41,3 +41,5 @@ OSCILLATORS:
 
 OTHER:
 - dkvowel~ - vowel synthesizer based on three formants
+- dkradiostatic~ - abstraction based on jnarveson's SC radiostatic code (static only)
+- dkradiotuning~ - abstraction based on jnarveson's SC radiostatic code (tuning only)
