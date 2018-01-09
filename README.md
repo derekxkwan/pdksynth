@@ -27,6 +27,7 @@ PITCHES:
 - dkdesyp1~ - DEtuned SYnth Pad
 - dkdtmf~ - dtmf synth
 - dkemsine1~ - everything modulated sine
+- dkkarplus~ - karplus-strong synth
 - dkklmba1~ - kalimba synth (requires dkenv~, dkpink~, dksnbnkr~ from pdkm)
 - dksynsaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
