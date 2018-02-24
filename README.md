@@ -28,7 +28,7 @@ PITCHES:
 - dkdtmf~ - dtmf synth
 - dkemsine1~ - everything modulated sine
 - dkkarplus~ - karplus-strong synth
-- dkklmba1~ - kalimba synth (requires dkenv~, dkpink~, dksnbnkr~ from pdkm)
+- dkklmba1~ - kalimba synth (requires dkpink~ from pdkm, dkringerbank~ from pdkvabs)
 - dksynsaw1~ - saw synth (requires pdkm)
 - dkorgan1~ - organ synth
 - dkpiano1~ - piano synth
