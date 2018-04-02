@@ -14,7 +14,8 @@ PERCUSSION:
 - dkclap2~ - clap synthesizer
 - dkgong1~ - gong fm synth
 - dkhh1~ - hihat synth
-- dkhh2~ - hihat synth (requres dkpink~, dkenv~)
+- dkhh2~ - hihat synth (requires dkpink~, dkenv~)
+- dkhh3~ - hihat synth (requires dkvanssimp~, dkdecay2~ from pdkvabs)
 - dksd1~ - snare drum synth
 - dksd2~ - snare drum synth
 - dksd3~ - snare drum synth
