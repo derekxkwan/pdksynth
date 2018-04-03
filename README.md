@@ -20,6 +20,7 @@ PERCUSSION:
 - dksd2~ - snare drum synth
 - dksd3~ - snare drum synth
 - dksd4~ - snare drum synth
+- dksd5~ - snare drum synth (requires dkvanssimp~, dkdecay2~ from pdkvabs)
 
 
 PITCHES:
