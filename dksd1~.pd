@@ -1,6 +1,6 @@
-#N canvas 85 286 1339 733 10;
-#X obj 437 630 *~;
-#X obj 485 573 vline~;
+#N canvas 85 286 2046 1033 12;
+#X obj 384 672 *~;
+#X obj 488 594 vline~;
 #X obj 251 509 noise~;
 #X obj 311 396 vline~;
 #X obj 217 321 f;
@@ -23,10 +23,10 @@
 #X obj 620 178 f \$4;
 #X obj 799 157 f \$5;
 #X obj 987 170 f \$6;
-#X obj 53 192 t b b;
+#X obj 23 397 t b b;
 #X obj 536 402 f;
 #X obj 39 122 inlet;
-#X obj 446 703 outlet~;
+#X obj 381 796 outlet~;
 #X obj 363 46 loadbang;
 #X text 300 183 note dur (ms);
 #X text 142 182 main pitch (hz);
@@ -38,7 +38,7 @@
 #X obj 865 109 print \$0-dkbd;
 #X text 9 18 dksd1~: snare drum synth;
 #X text 847 201 pitchiness (q);
-#X text 585 439 args: 1 main pitch \, 2 note dur (ms) \, 3 pitch glide
+#X text 769 439 args: 1 main pitch \, 2 note dur (ms) \, 3 pitch glide
 prop \, 4 glide dur prop \, 5 pitchiness (q) \, 6 lowpass hz;
 #X obj 247 168 moses 4.99;
 #X obj 114 158 moses 19.999;
@@ -46,18 +46,18 @@ prop \, 4 glide dur prop \, 5 pitchiness (q) \, 6 lowpass hz;
 #X obj 620 200 moses 1e-11;
 #X obj 798 178 moses 1e-11;
 #X obj 987 192 moses 29.9999;
-#X text 592 599 args for 2nd inlet: pitch: main pitch \, dur: note
+#X text 776 599 args for 2nd inlet: pitch: main pitch \, dur: note
 duration \, pgprop: pitch glide prop \, pgdur: pitch glide dur prop
 \, noiseamt: pitchiness( q) \, lop: lowpass(hz);
 #X obj 603 63 route pitch dur pgprop pgdur pitchamt lop;
-#X text 588 491 inlets: 1 trigger \, 2 main pitch/ note dur (ms)/ pitch
+#X text 772 491 inlets: 1 trigger \, 2 main pitch/ note dur (ms)/ pitch
 glide prop/glide dur prop/pitchiness (q)/lowpass (hz);
 #X obj 297 623 lop~ 5000;
 #X msg 788 200 10;
 #X obj 300 573 vcf~ 10;
 #X obj 314 497 +~ 200;
 #X msg 320 371 0 \, \$1 2 0 \, 0 \$2 5;
-#X obj 485 595 *~;
+#X obj 488 616 *~;
 #X obj 430 301 sqrt;
 #X obj 312 453 *~;
 #X msg 485 211 0.5;
@@ -67,14 +67,18 @@ glide prop/glide dur prop/pitchiness (q)/lowpass (hz);
 #X msg 246 189 125;
 #X obj 263 545 *~ 9;
 #X text 147 544 Compensate for q;
-#X text 592 554 defaults: main pitch - 300 \, note dur - 125 \, pitch
+#X text 776 554 defaults: main pitch - 300 \, note dur - 125 \, pitch
 glide prop - 0.5 \, glide dur prop - 0.75 \, pitchiness - 10 \, lowpass
 - 5000;
 #X msg 480 552 0 2 \, 1 2 2 \, 0 \$1 4;
-#X obj 485 617 *~;
+#X obj 488 638 *~;
 #X obj 430 323 sqrt;
 #X obj 311 418 *~;
-#X connect 0 0 27 0;
+#X obj 25 241 route bang float;
+#X obj 56 344 t b f;
+#X msg 33 300 1;
+#X obj 384 726 *~ 1;
+#X connect 0 0 71 0;
 #X connect 1 0 53 0;
 #X connect 1 0 53 1;
 #X connect 2 0 61 0;
@@ -103,7 +107,7 @@ glide prop - 0.5 \, glide dur prop - 0.75 \, pitchiness - 10 \, lowpass
 #X connect 24 0 6 0;
 #X connect 24 1 25 0;
 #X connect 25 0 64 0;
-#X connect 26 0 24 0;
+#X connect 26 0 68 0;
 #X connect 28 0 7 0;
 #X connect 28 0 19 0;
 #X connect 28 0 20 0;
@@ -152,3 +156,9 @@ glide prop - 0.5 \, glide dur prop - 0.75 \, pitchiness - 10 \, lowpass
 #X connect 66 0 16 1;
 #X connect 67 0 55 0;
 #X connect 67 0 55 1;
+#X connect 68 0 70 0;
+#X connect 68 1 69 0;
+#X connect 69 0 24 0;
+#X connect 69 1 71 1;
+#X connect 70 0 69 0;
+#X connect 71 0 27 0;

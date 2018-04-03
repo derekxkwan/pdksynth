@@ -1,4 +1,4 @@
-#N canvas 99 285 1124 769 10;
+#N canvas 99 285 1552 983 12;
 #X obj 450 663 *~;
 #X obj 485 636 vline~;
 #X obj 271 577 +~;
@@ -28,12 +28,12 @@
 #X obj 620 178 f \$4;
 #X obj 799 157 f \$5;
 #X obj 987 170 f \$6;
-#X obj 53 192 t b b;
+#X obj 26 424 t b b;
 #X obj 536 402 f;
 #X obj 39 122 inlet;
-#X obj 457 717 outlet~;
+#X obj 424 825 outlet~;
 #X obj 363 46 loadbang;
-#X text 586 439 args: 1 main pitch \, 2 note dur (ms) \, 3 pitch glide
+#X text 856 417 args: 1 main pitch \, 2 note dur (ms) \, 3 pitch glide
 prop \, 4 glide dur prop \, 5 noisiness (%) \, 6 lowpass hz;
 #X text 302 192 note dur (ms);
 #X text 142 182 main pitch (hz);
@@ -50,31 +50,35 @@ prop \, 4 glide dur prop \, 5 noisiness (%) \, 6 lowpass hz;
 #X obj 620 200 moses 1e-09;
 #X obj 798 179 moses 1e-20;
 #X obj 987 192 moses 29.999;
-#X text 588 491 inlets: 1 trigger \, 2 main pitch/note dur/itch glide
+#X text 858 469 inlets: 1 trigger \, 2 main pitch/note dur/itch glide
 prop/glide dur prop/noisiness (%)/lowpass (hz);
 #X obj 536 47 route pitch dur pgprop pgdur noiseamt lop;
-#X text 592 599 args for 2nd inlet: pitch: main pitch \, dur: note
+#X text 862 577 args for 2nd inlet: pitch: main pitch \, dur: note
 duration \, pgprop: pitch glide prop \, pgdur: pitch glide dur prop
 \, noiseamt: noisiness( %) \, lop: lowpass(hz);
 #X obj 485 658 *~;
 #X obj 395 315 sqrt;
 #X obj 320 470 *~;
 #X msg 331 393 0 \, \$1 2 0 \, 0 \$2 2;
-#X text 592 552 defaults: main pitch - 50 \, note dur - 125 \, pitch
+#X text 862 530 defaults: main pitch - 50 \, note dur - 125 \, pitch
 glide prop - 0.75 \, glide dur prop - 0.75 \, noisiness - 0.3 \, lowpass
 - 500;
 #X obj 312 560 *~ 0.003;
-#X obj 271 623 lop~ 750;
-#X obj 239 541 phasor~ 50;
+#X obj 264 659 lop~ 750;
+#X obj 231 530 phasor~ 50;
 #X msg 247 189 300;
 #X msg 987 214 1250;
 #X msg 620 222 0.9;
 #X msg 483 209 0.3;
 #X obj 500 265 t b f;
-#X msg 469 615 0 2 \, 1 2 2 \, 0 \$1 4;
+#X msg 498 581 0 2 \, 1 2 2 \, 0 \$1 4;
 #X msg 107 195 45;
 #X msg 798 201 0.2, f 6;
-#X connect 0 0 32 0;
+#X obj 39 317 route bang float;
+#X obj 450 753 *~ 1;
+#X obj 74 389 t b f;
+#X msg 37 360 1;
+#X connect 0 0 69 0;
 #X connect 1 0 52 0;
 #X connect 1 0 52 1;
 #X connect 2 0 4 0;
@@ -107,7 +111,7 @@ glide prop - 0.75 \, glide dur prop - 0.75 \, noisiness - 0.3 \, lowpass
 #X connect 29 0 9 0;
 #X connect 29 1 30 0;
 #X connect 30 0 65 0;
-#X connect 31 0 29 0;
+#X connect 31 0 68 0;
 #X connect 33 0 10 0;
 #X connect 33 0 24 0;
 #X connect 33 0 25 0;
@@ -152,3 +156,9 @@ glide prop - 0.75 \, glide dur prop - 0.75 \, noisiness - 0.3 \, lowpass
 #X connect 65 0 1 0;
 #X connect 66 0 6 0;
 #X connect 67 0 16 0;
+#X connect 68 0 71 0;
+#X connect 68 1 70 0;
+#X connect 69 0 32 0;
+#X connect 70 0 29 0;
+#X connect 70 1 69 1;
+#X connect 71 0 70 0;
