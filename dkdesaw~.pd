@@ -1,4 +1,4 @@
-#N canvas 764 614 811 383 12;
+#N canvas 756 621 811 383 12;
 #X msg 430 212 all \$1;
 #X obj 433 100 inlet;
 #X text 486 91 freq;
@@ -16,7 +16,7 @@
 #X text 659 93 gpl v 3;
 #X obj 433 125 f \$1;
 #X obj 518 41 loadbang;
-#X obj 417 270 clone -x util/dkdesaw1-osc~ 5;
+#X obj 417 270 clone -x util/dkdesaw-osc~ 5;
 #X connect 0 0 17 0;
 #X connect 1 0 15 0;
 #X connect 15 0 0 0;
